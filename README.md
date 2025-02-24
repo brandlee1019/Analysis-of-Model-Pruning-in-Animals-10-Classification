@@ -27,10 +27,10 @@ This repository presents a comprehensive analysis of model pruning techniques ap
 | Weight Pruned Custom CNN| 79.18%   | 0.56MB| 98.94%      |
 | Filter Pruned Custom CNN| 83.20%   | 39.8MB| 30.76%      |
 
-###  Key Findings
-1. **Accuracy-Sparsity Tradeoff**: Filter pruning at 30% sparsity yields optimal accuracy gain (+5.74%)
-2. **Memory Efficiency**: Weight pruning reduces model size by 98.94% with <1% accuracy drop
-3. **Hardware Impact**: Pruned models show 2.1-3.7x speedup on edge devices (Raspberry Pi 4)
+## Key Insights
+1. **Pruning Paradox**: Moderate sparsity (30-70%) often improves model performance
+2. **Storage Optimization**: Weight pruning + gzip achieves extreme compression
+3. **Architecture Matters**: Filter pruning works better with shallow networks
 
 ---
 
@@ -59,10 +59,10 @@ This repository presents a comprehensive analysis of model pruning techniques ap
 | 权重剪枝CNN           | 79.18%  | 0.56MB | 98.94%    |
 | 过滤器剪枝CNN         | 83.20%  | 39.8MB | 30.76%    |
 
-###  核心发现
-1. **精度-稀疏度权衡**：30%稀疏度的过滤器剪枝带来最佳精度提升(+5.74%)
-2. **内存效率**：权重剪枝在精度损失<1%前提下实现98.94%模型压缩
-3. **硬件影响**：剪枝模型在边缘设备(Raspberry Pi 4)上实现2.1-3.7倍加速
+## 主要结论
+1. **剪枝悖论**：适度稀疏度(30-70%)常提升模型表现  
+2. **存储优化**：权重剪枝+gzip实现极致压缩  
+3. **架构差异**：过滤器剪枝更适用于浅层网络  
 
 ---
 
